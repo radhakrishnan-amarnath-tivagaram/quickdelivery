@@ -1,9 +1,11 @@
-
+import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css';
+import {BrowserRouter} from 'react-router-dom'
 
 function App() {
   return (
-    <h1>Ecommerce js</h1>
+    <BrowserRouter>
+    </BrowserRouter>
   );
 }
 
