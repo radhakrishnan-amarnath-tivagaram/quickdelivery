@@ -1,8 +1,8 @@
 import React from 'react'
 import qdlogo from '../../assets/images/qdlogo.png'
 import {Link} from "@mui/material";
-import Button from '@mui/material/Button';
-
+import CountryDropdown from '../CountryDropdown';
+import Searchbar from '../Searchbar';
 
 const Header = () => {
   return (
@@ -21,8 +21,10 @@ const Header = () => {
                         </Link>
                     </div>
 
-                    <div className='dropDownColumn col-sm-10 d-flex align-items-center'>
-                        <Button className='countryDropdown'></Button>
+                    <div className='col-sm-10 d-flex align-items-center country'>
+                        <CountryDropdown/>
+                        {/* search bar*/}
+                        <Searchbar/>
                     </div>
                 </div>
             </div>
