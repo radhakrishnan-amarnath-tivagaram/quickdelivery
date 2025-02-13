@@ -1,7 +1,7 @@
 import { Button } from '@mui/material'
 import React from 'react'
 import { FaAngleDown } from "react-icons/fa";
-import './index.css'
+// import './index.css'
 
 const CountryDropdown = () => {
   return (

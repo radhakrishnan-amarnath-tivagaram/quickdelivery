@@ -1,8 +1,9 @@
 import React from 'react'
 import qdlogo from '../../assets/images/qdlogo.png'
-import {Link} from "@mui/material";
+import {Button, Link} from "@mui/material";
 import CountryDropdown from '../CountryDropdown';
-import Searchbar from '../Searchbar';
+import { IoIosSearch } from "react-icons/io";
+import { FiUser } from "react-icons/fi";
 
 const Header = () => {
   return (
@@ -12,7 +13,7 @@ const Header = () => {
           <p className='mb-0 mt-0 text-center'>Due to covid 19 pandemic , orders may be processed with slight delay</p>
         </div>
       </div>
-        <div className='header'>
+        <header className='header'>
             <div className='container'>
                 <div className='row'>
                     <div className='logoWrapper col-sm-2 d-flex align-items-center'>
@@ -24,11 +25,20 @@ const Header = () => {
                     <div className='col-sm-10 d-flex align-items-center country'>
                         <CountryDropdown/>
                         {/* search bar*/}
-                        <Searchbar/>
+                        
+                        <div className='headerSearch ml-3 mr-5'>
+                          <input type='text' placeholder='Search for products...'/>
+                          <Button><IoIosSearch/></Button>
+                        </div>
+
+                        <div className='align-items-start d-flex userLogin'>
+                          <Button className='loginCircleButton'><FiUser size={20} color='grey'/></Button>
+                        </div> 
                     </div>
+                    
                 </div>
             </div>
-        </div>
+        </header>
     </div>
   )
 }
