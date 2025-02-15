@@ -5,6 +5,7 @@ import CountryDropdown from '../CountryDropdown';
 import { IoIosSearch } from "react-icons/io";
 import { FiUser } from "react-icons/fi";
 import { IoBagOutline } from "react-icons/io5";
+import Searchbar from '../Searchbar';
 
 const Header = () => {
   return (
@@ -27,10 +28,7 @@ const Header = () => {
                         <CountryDropdown/>
                         {/* search bar*/}
                         
-                        <div className='headerSearch ml-3 mr-6'>
-                          <input type='text' placeholder='Search for products...'/>
-                          <Button><IoIosSearch/></Button>
-                        </div>
+                        <Searchbar/>
 
                         <div className='align-items-center d-flex userLogin'>
                           <Button className='loginCircleButton'><FiUser/></Button>
