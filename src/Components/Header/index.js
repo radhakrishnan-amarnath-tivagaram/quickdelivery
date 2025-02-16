@@ -2,7 +2,6 @@ import React from 'react'
 import qdlogo from '../../assets/images/qdlogo.png'
 import {Button, Link} from "@mui/material";
 import CountryDropdown from '../CountryDropdown';
-import { IoIosSearch } from "react-icons/io";
 import { FiUser } from "react-icons/fi";
 import { IoBagOutline } from "react-icons/io5";
 import Searchbar from '../Searchbar';
@@ -15,6 +14,7 @@ const Header = () => {
           <p className='mb-0 mt-0 text-center'>Due to covid 19 pandemic , orders may be processed with slight delay</p>
         </div>
       </div>
+
         <header className='header'>
             <div className='container'>
                 <div className='row'>
@@ -43,6 +43,12 @@ const Header = () => {
                 </div>
             </div>
         </header>
+
+        <nav>
+          <div className='container'>
+
+          </div>
+        </nav>
     </div>
   )
 }
