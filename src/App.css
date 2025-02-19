@@ -52,6 +52,11 @@
   text-align: left !important; line-height: 16px;
 }
 
+.headerWrapper .header .country .countryDropdown:hover{
+  background-color: #faf7f7;
+  color: #be0202;
+}
+
 header .container{ 
   max-width: 90%;
   margin-top: 5px;
@@ -153,7 +158,7 @@ nav .allCatTab *{
 }
 
 nav .allCatTab:hover{
-  background: #5a5d64;
+  background: #36383d;
 }
 
 nav .allCatTab .text{
@@ -184,11 +189,16 @@ nav .catogertyTab2 ul li a{
   font-weight: 600;
   text-decoration: none;
   color: rgba(0, 0, 0, 0.6);text-transform: capitalize;display: flex;
-  align-items: center; padding: 8px 28px;
+  align-items: center; padding: 8px 20px;
   transition: all 0.2s ease-in-out; border-radius: 25px;
 }
 
 nav .catogertyTab2 ul li a:hover{
-  background-color: #f5cccc;
+  background-color: #f3d2d2;
   color: #be0202;
+}
+
+nav .catogertyTab2 ul li a svg{
+  font-size: 20px;
+  color: #be0404;
 }
