@@ -62,24 +62,27 @@ header .container{
   margin-top: 5px;
 }
 
-header .headerSearch{
-  width: 50%; height: 50px; background-color: #f3f4f7;padding: 10px;
+.headerSearch{
+  width: 100%; height: 50px; background-color: #f3f4f7;padding: 10px;
   position: relative; border-radius: 10px; border: 1px solid rgba(0,0,0,0.1);
 }
 
-header .headerSearch input{
+.headerSearch input{
   background: transparent !important; width: 100%; height: 30px;
   outline: none !important; border: none !important; padding: 0px 20px 7px;
   font-size: 16px;
 }
 
-header .headerSearch button{
-  position: absolute; top: 10px; right: 10px;
-  z-index: 100; min-width: 40px; height: 30px; width: 50px; border-radius: 50%;
+.headerSearch button{
+  position: absolute; 
+  height: 50px;
+  top : 0px;
+  right: 0px;
+  z-index: 100; border-radius: 50%;
   color: #000;
 }
 
-header .headerSearch button svg{
+.headerSearch button svg{
   font-size: 25px;
 }
 
@@ -93,7 +96,6 @@ header .country .userLogin .loginCircleButton{
   border: 1px solid rgba(0, 0, 0, 0.1);
   height: 45px;
   min-width: 45px;
-  margin-left: 30px;
   background-color: rgba(189, 170, 170, 0.1);
 }
 
@@ -107,7 +109,6 @@ header .country .userLogin .cartAmount{
 }
 
 header .country .userLogin .cartCircleButton{
-  margin-left: 0px;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   margin-top: 2px;
@@ -184,21 +185,85 @@ nav .allCatTab .allCatIcon2{
 }
 
 nav .catogertyTab2 ul{margin-bottom: 0px;}
-nav .catogertyTab2 ul li a{
+nav .catogertyTab2 ul li a button{
   font-size: 14px;
   font-weight: 600;
   text-decoration: none;
   color: rgba(0, 0, 0, 0.6);text-transform: capitalize;display: flex;
-  align-items: center; padding: 8px 20px;
+  align-items: center; padding: 8px 16px;
   transition: all 0.2s ease-in-out; border-radius: 25px;
 }
 
-nav .catogertyTab2 ul li a:hover{
+nav .catogertyTab2 ul li a{
+  text-decoration: none;
+}
+
+nav .catogertyTab2 ul li a button:hover{
   background-color: #f3d2d2;
   color: #be0202;
+
 }
 
 nav .catogertyTab2 ul li a svg{
   font-size: 20px;
   color: #be0404;
+}
+
+.countryDialog .MuiPaper-elevation{
+  padding: 25px;
+  position: relative;
+}
+
+.countryDialog .countryDialogheader{
+  font-size: 15px;
+}
+
+.countryDialog .countryDialogDesc{
+  font-size: 12px;
+}
+
+.countryDialog .countryList{
+  margin-bottom: 0px;
+  max-height: 400px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.countryDialog .countryList li{
+  width: 100%;
+  list-style: none;
+  padding: 5px 15px;
+}
+
+.countryDialog .countryList li button{
+  width: 100%;
+  text-transform: capitalize !important;
+  color: #000 !important;
+  justify-content: flex-start;
+}
+
+::-webkit-scrollbar{
+  width: 8px !important;
+  height: 8px !important;
+}
+
+::-webkit-scrollbar-thumb{
+  background: #ccc !important;
+}
+
+::-webkit-scrollbar-track{
+  background: transparent !important;
+}
+
+.countryDialog .close_{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border-radius: 50%;
+  min-width: 5px;
+}
+
+.countryDialog .close_ svg{
+  font-size: 25px;
+  color: #000;
 }
